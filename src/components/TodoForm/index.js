@@ -33,10 +33,11 @@ setTodos((currentTodos) => {
 
 
   return (
-    <main>
+    <main className="flex is-vcentered">
+      <header className="has-background-primary has-text-centered">Header</header>
       <List todos={todos  } handler={handleCheckBox}/>
       <InputTodo />
-      <Button />
+      <Button className="mt-6 is-vcentered"/>
     </main>
   )
 }

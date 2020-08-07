@@ -4,9 +4,12 @@ import PropTypes from 'prop-types'
 
 export const List = ({todos, handler}) => {
   return (
-  <ol>
+
+  <ol className="section">
     {todos.map(({id, completed, text}) => (
-      <li key={id} data-id={id} className=''>{text} <input type="checkbox" onClick={handler} /> </li>
+      <li key={id} data-id={id} className="mt-4 has-text-centered"><strong>{text}</strong>
+        <input className="" type="checkbox" onClick={handler} />
+      </li>
     ))}
   </ol>
   )
