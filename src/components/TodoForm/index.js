@@ -33,11 +33,17 @@ setTodos((currentTodos) => {
 
 
   return (
-    <main className="flex is-vcentered">
-      <header className="has-background-primary has-text-centered">Header</header>
-      <List todos={todos  } handler={handleCheckBox}/>
-      <InputTodo />
-      <Button className="mt-6 is-vcentered"/>
-    </main>
+    <section className="section centered is-full-height has-background-info">
+      <header className="hero column is-large has-text-centered has-background-white has-text-primary has-text-weight-bold is-family-code is-size-3">
+        Checklist
+      </header>
+
+      <section className="container has-text-centered">
+        <List todos={todos} handler={handleCheckBox}/>
+        <InputTodo/>
+        <Button />
+        </section>
+
+    </section>
   )
 }
